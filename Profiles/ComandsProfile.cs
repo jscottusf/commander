@@ -8,7 +8,9 @@ namespace Commander.Profiles
     {
         public CommandsProfile()
         {
+            //Sourece -> Target
             CreateMap<Command, CommandReadDto>();
+            CreateMap<CommandCreateDto, Command>();
         }
     }
 }

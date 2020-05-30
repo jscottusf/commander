@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Commander.Dtos
 {
-    public class CommandCreateDto
+    public class CommandUpdateDto
     {
         [Required]
         [MaxLength(250)]
@@ -11,6 +11,5 @@ namespace Commander.Dtos
         public string Line { get; set; }
         [Required]
         public string Platform { get; set; }
-        //[Required] makes error handling better for client, assigns blame to client
     }
 }
